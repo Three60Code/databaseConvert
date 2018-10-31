@@ -248,6 +248,7 @@ class MigrationController extends Controller
             `field_data_field_relative_education`.`field_relative_education_value` `education_status`,
             `field_data_field_relatives_job`.`field_relatives_job_value` `work_status`,
             `field_data_field_relative_job_desc`.`field_relative_job_desc_value` `profession`,
+            `field_data_field_relative_relation`.`field_relative_relation_value` `relativity`,
             `field_data_field_relative_disease`.`field_relative_disease_value` `is_ill`,
             `field_data_field_relative_disease_type`.`field_relative_disease_type_value` `illness_type`,
             `field_data_field_relative_disease_desc`.`field_relative_disease_desc_value` `illness_description`,
@@ -265,6 +266,7 @@ class MigrationController extends Controller
             LEFT JOIN field_data_field_relative_education ON field_data_field_relative_education.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
             LEFT JOIN field_data_field_relatives_job ON field_data_field_relatives_job.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
             LEFT JOIN field_data_field_relative_job_desc ON field_data_field_relative_job_desc.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
+            LEFT JOIN field_data_field_relative_relation ON field_data_field_relative_relation.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
             LEFT JOIN field_data_field_relative_disease ON field_data_field_relative_disease.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
             LEFT JOIN field_data_field_relatives_gov_med ON field_data_field_relatives_gov_med.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
             LEFT JOIN field_data_field_relative_disease_type ON field_data_field_relative_disease_type.`entity_id` = field_data_field_relatives_info.`field_relatives_info_value`
