@@ -41,7 +41,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', localhost),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'nahr_app'),
             'username' => env('DB_USERNAME', 'boraq_admin'),
@@ -56,7 +56,7 @@ return [
 
         'mysql2' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', localhost),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE_SECOND', 'research'),
             'username' => env('DB_USERNAME_SECOND', 'boraq_admin'),
